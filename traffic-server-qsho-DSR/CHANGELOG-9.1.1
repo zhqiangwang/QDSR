@@ -1,0 +1,35 @@
+Changes with Apache Traffic Server 9.1.1
+  #7501 - JeMalloc performance improvments
+  #7913 - Ensure TS_VCONN_CLOSE_HOOK hook is called during TS_EVENT_VCONN_CLOSE.
+  #7994 - Allow to TLS handshake to error out on TSVConnReenable
+  #8028 - Use thread_local to speed things up in JeAllocator
+  #8067 - Add a new log tag %<vs>
+  #8230 - Updating our AuTests to use Proxy Verifier v2.2.2
+  #8236 - Fix crash in lua host lookup
+  #8241 - mptcp: Missing socket-option in case of SO_REUSEPORT code-path
+  #8256 - Bubble up ssl_multicert.config load failures
+  #8257 - Allow for graceful handling of ip_allow.yaml format errors
+  #8260 - Fix Http2Stream leaks
+  #8270 - Add missing #include directive
+  #8279 - stats_over_http: don't show config file error when not specified
+  #8280 - Report to user correct configurable to tweak on error
+  #8285 - Cleanup generated LDFLAGS for jemalloc
+  #8287 - Fix timeout checks of NetHandler::manage_active_queue()
+  #8289 - Use flynt to convert contrib,doc and plugins to python f-strings
+  #8293 - Fixes a typo in the Rate Limit plugin
+  #8295 - Align strategies.yaml loading logging with other config files (#8262)
+  #8307 - statichit: allow exact path matching to be optional
+  #8308 - Truly treat multiple certs with the same SAN as a warning (#8303)
+  #8310 - Fix a compile error in rate_limit plugin
+  #8312 - Fix corner cases in rate limiting plugin
+  #8315 - doc: Fixes curl syntax for PUSH example
+  #8349 - Fix yamlcpp include folder by using the YAMLCPP_INCLUDE variable (#8319)
+  #8352 - change MemArena::make test to remove memory leak
+  #8370 - Traffic Dump: update json-schema for new tuple requirements
+  #8419 - Fix a potential H2 stall issue (#8381)
+  #8451 - Reject Transfer-Encoding in pre-HTTP/1.1 requests
+  #8452 - Detect and handle chunk header size truncation
+  #8453 - Ignore ECONNABORTED on blocking accept
+  #8455 - Fix output '\n' HTTP field line endings
+  #8475 - Check length before search accept-encoding header
+  #8476 - Fix case of brotli
